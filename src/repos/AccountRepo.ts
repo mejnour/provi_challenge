@@ -22,6 +22,15 @@ class AccountRepo {
 
         this.accounts.push(account);
     }
+
+    findByEmail(email: string): Account {
+        const account = this.accounts.find(account => account.email === email);
+        return account;
+    }
+
+    delete(accountId: string): void {
+        this.accounts = this.accounts.filter(account => account.id !== accountId);
+    }
 }
 
 
