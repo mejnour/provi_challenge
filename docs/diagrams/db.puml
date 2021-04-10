@@ -1,0 +1,19 @@
+@startuml
+
+entity "Account" as e1 {
+    --
+    **e-mail** : string
+    **password** : string
+}
+
+entity "Movie" as e3 {
+    --
+    **title**: string
+    **genre**: string
+    **description**: string
+    **duration**: number
+}
+
+' e1 e3
+
+@enduml
